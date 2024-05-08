@@ -1,4 +1,7 @@
 <?php 
+session_start();
+require 'koneksi.php';
+ceklogin();
 include 'template/header.php';
 include 'template/side.php';
 ?>
@@ -25,7 +28,7 @@ include 'template/side.php';
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <!-- Small boxes (Stat box) -->
+        <!-- Small boxes (Stat box) --> 
         <div class="row">
           <div class="col-lg-3 col-6">
             <!-- small box -->
@@ -136,9 +139,5 @@ include 'template/side.php';
 <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="dist/js/pages/dashboard.js"></script>
 </body>
 </html>
